@@ -1,31 +1,64 @@
 import React from "react";
 
-export const Navigation = () => {
+export default function Navigation({ currentPage, handlePageChange }) {
   const styles = {
     nav: {
       display: "flex",
       justifyContent: "flex-end",
       backgroundColor: "#0a343b",
       padding: "14px 20px",
-      textDecoration: "none",
+      // textDecoration: "none",
       textAlign: "center",
       color: "rgb(83, 235, 83)",
+      listStyleType: "none",
     },
   };
   return (
     <div>
-      <a href="#top" style={styles.nav}>
-        About me{" "}
-      </a>
-      <a href="#work" style={styles.nav}>
-        Work{" "}
-      </a>
-      <a href="#contact" style={styles.nav}>
-        Contact me{" "}
-      </a>
-      <a href="#bottom" style={styles.nav}>
-        Resume
-      </a>
+      <ul>
+        <li>
+          <a
+            href="#about"
+            style={styles.nav}
+            onClick={() => handlePageChange("About")}
+            className={currentPage === "About" ? "navlink active" : "nav-link"}
+          >
+            About me
+          </a>
+        </li>
+        <li>
+          <a
+            href="#work"
+            style={styles.nav}
+            onClick={() => handlePageChange("Project")}
+            className={currentPage === "Work" ? "navlink active" : "nav-link"}
+          >
+            Work
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            style={styles.nav}
+            onClick={() => handlePageChange("Contact")}
+            className={
+              currentPage === "Contact" ? "navlink active" : "nav-link"
+            }
+          >
+            Contact me
+          </a>
+        </li>
+        <li>
+          <a
+            href="#resume"
+            style={styles.nav}
+            onClick={() => handlePageChange("Resume")}
+            className={currentPage === "Resume" ? "navlink active" : "nav-link"}
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
     </div>
   );
-};
+}

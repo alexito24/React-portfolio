@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = () => {
+export default function Header() {
   return (
     <>
       <h1>Alex Lopez</h1>
@@ -12,4 +12,4 @@ export const Header = () => {
       ></img>
     </>
   );
-};
+}

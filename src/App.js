@@ -1,14 +1,6 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { Navigation } from "./components/Navigation";
+import PortfolioRender from "./components/PortfolioRender";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Navigation />
-    </div>
-  );
-}
+const App = () => <PortfolioRender />;
 
 export default App;

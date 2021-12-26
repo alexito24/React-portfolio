@@ -71,6 +71,19 @@ export default function Project() {
           ></img>
         </a>
       </div>
+      <div className=".sample-img">
+        <a
+          href="https://blooming-anchorage-52775.herokuapp.com/"
+          target="_blank"
+        >
+          <img
+            src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-movie-cinema-icongeek26-linear-colour-icongeek26-7.png"
+            alt="movie icon"
+            width="50%"
+            height="50%"
+          />
+        </a>
+      </div>
     </>
   );
 }

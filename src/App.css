@@ -68,3 +68,22 @@ footer {
   height: 200px;
   border: 1px solid black;
 }
+
+.name {
+  text-align: center;
+}
+
+li {
+  list-style: none
+}
+
+img {
+  height: 500px;
+  padding: 50px;
+  box-shadow: 5px 5px grey;
+  border-radius: 5rem
+}
+
+.projects {
+  text-align: center;
+}

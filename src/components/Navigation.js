@@ -5,9 +5,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
     nav: {
       display: "flex",
       justifyContent: "flex-end",
-      backgroundColor: "#0a343b",
       padding: "14px 20px",
-      // textDecoration: "none",
       textAlign: "center",
       color: "rgb(83, 235, 83)",
       listStyleType: "none",
